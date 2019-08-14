@@ -8,9 +8,7 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 **Prerequisite**
 
-`$ sudo pip3 install os`
-
-`$ sudo pip3 install termcolor`
+`$ sudo pip3 install *****`
 
 **GitClone**
 
