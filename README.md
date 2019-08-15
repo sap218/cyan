@@ -1,6 +1,6 @@
 # cyan
 
-cyan-notate
+cyannotate! 
 
 Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub](https://github.com/sap218) | **Python v3.5**
 
