@@ -21,16 +21,19 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 **Set Up**
 
 `$ cd cyan`
+
 `$ sudo python3 setup.py install` 
 
-## Running**
+## Running
 
-`$ cyan -file text.txt -words words.txt`
+`$ cyan -file yourinput.txt -words yourconcepts.txt`
 
 **Running the example**
 
-`$ cd cyan`
+`$ cd cyan` 
+
 `$ cd cyannotator`
+
 `$ cyan -file test_text.txt -words test_words.txt`
 
 ## Thank you! :abcd:
