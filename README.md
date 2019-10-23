@@ -26,7 +26,9 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 ## Running
 
-```$ cyan -file yourtextinput.txt -words yourconcepts.txt```
+```
+$ cyan -file yourtextinput.txt -words yourconcepts.txt
+```
 
 **Running the example**
 
