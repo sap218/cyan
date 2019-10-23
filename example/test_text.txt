@@ -1,0 +1,6 @@
+Hello, I am cyan-notator. This is an example of the text that you may be using also.
+
+I hope you enjoy this small tool - I know my creator did!
+My creator used this tool at the start of their PhD when they wanted to observe a distribution of words across some text corpus.
+
+If you notice in the test_words.txt it doesn't matter if you include CAPITALISED letters or not, cyannotator automatically lowers the case of every word across all txts.

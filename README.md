@@ -22,8 +22,6 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 **Set Up**
 
-`$ cd cyan`
-
 `$ sudo python3 setup.py install` 
 
 ## Running
@@ -47,9 +45,7 @@ Options:
 
 **Running the example**
 
-`$ cd cyan` 
-
-`$ cd cyannotator`
+`$ cd example` 
 
 `$ cyan -file test_text.txt -lists test_words.txt`
 
