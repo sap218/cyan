@@ -14,6 +14,8 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 `$ sudo pip3 install re`
 
+`$ sudo pip3 install click`
+
 **GitClone**
 
 `$ git clone https://github.com/sap218/cyan.git`
@@ -27,7 +29,19 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 ## Running
 
 ```
-$ cyan -file yourtextinput.txt -words yourconcepts.txt
+$ cyan -file yourtextinput.txt -lists yourconcepts.txt
+```
+
+**Help**
+`$ cyan --help`
+
+```
+Usage: cyan.py [OPTIONS]
+
+Options:
+  --file TEXT   Text file.
+  --lists TEXT  List of words.
+  --help        Show this message and exit.
 ```
 
 **Running the example**
@@ -36,7 +50,7 @@ $ cyan -file yourtextinput.txt -words yourconcepts.txt
 
 `$ cd cyannotator`
 
-`$ cyan -file test_text.txt -words test_words.txt`
+`$ cyan -file test_text.txt -lists test_words.txt`
 
 ## Thank you! :abcd:
 

@@ -7,45 +7,46 @@ Created on Thu Aug  8 15:47:43 2019
 """
 
 import re
+import click
 
-text = input("Words:\t")
-text = open(("%s.txt" % text), "r") 
-text = [re.sub('[^a-zA-Z0-9]+', ' ', _) for _ in text]
-text = text.lower()
 
-########################
+def textinput(file):
+    text = open(file, "r") 
+    text = " ".join(text)
+    text = text.replace("\n "," ")
+    text = text.lower()
+    return text
 
-words = input("Words:\t")
-words = open(("%s.txt" % words), "r") 
-toHighlight = []
-for concept in words:
-    concept = concept.lower()
-    toHighlight.append(concept[:-1])
+def conceptinput(lists):
+    words = open(lists, "r") 
+    toHighlight = []
+    for concept in words:
+        concept = concept.lower()
+        toHighlight.append(concept[:-1])
+    return toHighlight
 
-########################
+def highlighting(text, concepts):
+    colours = ["\033[1;36;40m", # cyan
+               "\033[0;30;48m" # plain
+               ] # http://ozzmaker.com/add-colour-to-text-in-python/
+    for item in concepts:
+        text = (re.sub((r'\b%s\b' % item), ('%s%s%s' % (colours[0], item, colours[1])), text)) # https://stackoverflow.com/questions/31697043/replace-exact-substring-in-python
+    return text
 
-# http://ozzmaker.com/add-colour-to-text-in-python/
-colours = ["\033[1;31;40m",
-           "\033[1;32;40m",
-           "\033[1;33;40m",
-           "\033[1;34;40m",
-           "\033[1;35;40m",
-           "\033[1;36;40m", # cyan
-           "\033[1;37;40m",
-           "\033[1;30;40m",
-           "\033[0;30;48m" # plain
-           ]
 
-########################
-########################
+@click.command()
+@click.option('--file', help='Text file.')
+@click.option('--lists', help='List of words.')
+def main(file, lists):
+    #file = "test_text.txt"
+    text = textinput(file)
 
-for item in toHighlight:
-    text = (re.sub((r'\b%s\b' % item), ('%s%s%s' % (colours[5], item, colours[8])), text))
-# https://stackoverflow.com/questions/31697043/replace-exact-substring-in-python
+    #lists = "test_words.txt"
+    concepts = conceptinput(lists)
 
-print(threads_list)
+    output = highlighting(text, concepts)
+    print(output)
 
-# outF = open("results.txt", "w")
-# outF.write(threads_list)
-# outF.close()
+if __name__ == "__main__":
+    main()
 
