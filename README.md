@@ -12,7 +12,7 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 **Prerequisite**
 
-`$ sudo pip3 install *****`
+`$ sudo pip3 install re`
 
 **GitClone**
 
@@ -20,11 +20,18 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 **Set Up**
 
-`$ sudo python3 setup.py install`
+`$ cd cyan`
+`$ sudo python3 setup.py install` 
 
-**Running**
+## Running**
 
 `$ cyan -file text.txt -words words.txt`
+
+**Running the example**
+
+`$ cd cyan`
+`$ cd cyannotator`
+`$ cyan -file test_text.txt -words test_words.txt`
 
 ## Thank you! :abcd:
 
