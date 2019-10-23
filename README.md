@@ -2,7 +2,7 @@
 
 <img src="cyan.png" align="right" alt="cyan annotate logo" width="200">
 
-Introducing cyan-notate! An annotator for plain text files using a list of words.
+Introducing cyan-notate! An annotator for plain text files using a list of words/concepts.
 
 Please **note**: as I am not an expert, the script may not work as expected. 
 
@@ -26,7 +26,7 @@ Author __Samantha C Pendleton__, [Twitter](https://twitter.com/sap218) & [GitHub
 
 ## Running
 
-`$ cyan -file yourinput.txt -words yourconcepts.txt`
+```$ cyan -file yourtextinput.txt -words yourconcepts.txt```
 
 **Running the example**
 
