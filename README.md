@@ -2,7 +2,7 @@
 
 <img src="cyan.png" align="right" alt="cyan annotate logo" width="200">
 
-Introducing cyan-notate! An annotator for plain text files using a list of words/concepts.
+Introducing `cyan` - an annotator for plain text files using a list of words/concepts.
 
 Please **note**: as I am not an expert, the script may not work as expected. 
 
@@ -55,4 +55,5 @@ Don't hesitate to create an issue or make a suggestion!
 
 ###### Todo List
 - [x] Set-up repository
-- [ ] Improve code
+- [x] Improve code
+- [ ] Fix minor issue with special chars
