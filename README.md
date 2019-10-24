@@ -1,4 +1,4 @@
-# cyan
+# cyannotator
 
 <img src="cyan.png" align="right" alt="cyan annotate logo" width="200">
 
