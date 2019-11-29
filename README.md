@@ -52,8 +52,3 @@ Options:
 ## Thank you! :abcd:
 
 Don't hesitate to create an issue or make a suggestion!
-
-###### Todo List
-- [x] Set-up repository
-- [x] Improve code
-- [ ] Fix minor issue with special chars
